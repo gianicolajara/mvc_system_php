@@ -1,95 +1,209 @@
-[26-Apr-2021 16:47:02 America/Caracas] PermissionsModel::getdefaultpermissionsforrole -> error: PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'default_page_type_users.id_type_user' in 'where clause' in D:\xampp\htdocs\twitter\libs\model.php:29
-Stack trace:
-#0 D:\xampp\htdocs\twitter\libs\model.php(29): PDO->prepare('SELECT id_page,...')
-#1 D:\xampp\htdocs\twitter\models\permissionsModel.php(37): Model->prepare('SELECT id_page,...')
-#2 D:\xampp\htdocs\twitter\class\permissions.php(23): PermissionsModel->getAllDefaultForRole(5)
-#3 D:\xampp\htdocs\twitter\class\permissions.php(39): Permissions->data(5)
-#4 D:\xampp\htdocs\twitter\class\permissions.php(16): Permissions->permissionsURL()
-#5 D:\xampp\htdocs\twitter\libs\controller.php(17): Permissions->__construct()
-#6 D:\xampp\htdocs\twitter\controllers\loginController.php(12): Controller->__construct()
-#7 D:\xampp\htdocs\twitter\libs\app.php(48): Login->__construct()
-#8 D:\xampp\htdocs\twitter\libs\app.php(13): App->controllerUrl(Array)
-#9 D:\xampp\htdocs\twitter\index.php(25): App->__construct()
-#10 {main}
-[26-Apr-2021 16:47:02 America/Caracas] Login::construct -> dentro de Login controller
-[26-Apr-2021 16:47:02 America/Caracas] View::render -> vistalogincargada
-[26-Apr-2021 16:47:02 America/Caracas] Model::loadModel -> Model loginModel cargada
-[26-Apr-2021 16:47:02 America/Caracas] app::functionUrl -> No hay funcion definida
-[26-Apr-2021 16:47:37 America/Caracas] Login::construct -> dentro de Login controller
-[26-Apr-2021 16:47:37 America/Caracas] View::render -> vistalogincargada
-[26-Apr-2021 16:47:37 America/Caracas] Model::loadModel -> Model loginModel cargada
-[26-Apr-2021 16:47:37 America/Caracas] app::functionUrl -> No hay funcion definida
-[26-Apr-2021 16:48:14 America/Caracas] Login::construct -> dentro de Login controller
-[26-Apr-2021 16:48:14 America/Caracas] View::render -> vistalogincargada
-[26-Apr-2021 16:48:14 America/Caracas] Model::loadModel -> Model loginModel cargada
-[26-Apr-2021 16:48:14 America/Caracas] app::functionUrl -> No hay funcion definida
-[26-Apr-2021 16:48:19 America/Caracas] Login::construct -> dentro de Login controller
-[26-Apr-2021 16:48:19 America/Caracas] View::render -> vistalogincargada
-[26-Apr-2021 16:48:19 America/Caracas] Model::loadModel -> Model loginModel cargada
-[26-Apr-2021 16:48:19 America/Caracas] app::functionUrl -> No hay funcion definida
-[26-Apr-2021 16:48:25 America/Caracas] Login::construct -> dentro de Login controller
-[26-Apr-2021 16:48:25 America/Caracas] View::render -> vistalogincargada
-[26-Apr-2021 16:48:25 America/Caracas] Model::loadModel -> Model loginModel cargada
-[26-Apr-2021 16:48:25 America/Caracas] app::functionUrl -> No hay funcion definida
-[26-Apr-2021 16:48:40 America/Caracas] Login::construct -> dentro de Login controller
-[26-Apr-2021 16:48:40 America/Caracas] View::render -> vistalogincargada
-[26-Apr-2021 16:48:40 America/Caracas] Model::loadModel -> Model loginModel cargada
-[26-Apr-2021 16:48:40 America/Caracas] app::functionUrl -> No hay funcion definida
-[26-Apr-2021 16:48:42 America/Caracas] Login::construct -> dentro de Login controller
-[26-Apr-2021 16:48:42 America/Caracas] View::render -> vistalogincargada
-[26-Apr-2021 16:48:42 America/Caracas] Model::loadModel -> Model loginModel cargada
-[26-Apr-2021 16:48:42 America/Caracas] app::functionUrl -> No hay funcion definida
-[26-Apr-2021 16:48:42 America/Caracas] register::construct -> dentro de registro controller
-[26-Apr-2021 16:48:42 America/Caracas] View::render -> vistaregistercargada
-[26-Apr-2021 16:48:42 America/Caracas] Model::loadModel -> Model registerModel cargada
-[26-Apr-2021 16:48:42 America/Caracas] app::functionUrl -> No hay funcion definida
-[26-Apr-2021 16:48:45 America/Caracas] View::render -> vistadashboardcargada
-[26-Apr-2021 16:48:45 America/Caracas] Model::loadModel -> Model no existe
-[26-Apr-2021 16:48:45 America/Caracas] app::functionUrl -> No hay funcion definida
-[26-Apr-2021 16:48:45 America/Caracas] Home::construct -> dentro de home controller
-[26-Apr-2021 16:48:45 America/Caracas] View::render -> vistahomecargada
-[26-Apr-2021 16:48:45 America/Caracas] Model::loadModel -> Model no existe
-[26-Apr-2021 16:48:45 America/Caracas] app::functionUrl -> No hay funcion definida
-[26-Apr-2021 16:48:47 America/Caracas] Login::construct -> dentro de Login controller
-[26-Apr-2021 16:48:47 America/Caracas] View::render -> vistalogincargada
-[26-Apr-2021 16:48:47 America/Caracas] Model::loadModel -> Model loginModel cargada
-[26-Apr-2021 16:48:47 America/Caracas] app::functionUrl -> No hay funcion definida
-[26-Apr-2021 16:48:48 America/Caracas] register::construct -> dentro de registro controller
-[26-Apr-2021 16:48:48 America/Caracas] View::render -> vistaregistercargada
-[26-Apr-2021 16:48:48 America/Caracas] Model::loadModel -> Model registerModel cargada
-[26-Apr-2021 16:48:48 America/Caracas] app::functionUrl -> No hay funcion definida
-[26-Apr-2021 16:48:48 America/Caracas] Login::construct -> dentro de Login controller
-[26-Apr-2021 16:48:48 America/Caracas] View::render -> vistalogincargada
-[26-Apr-2021 16:48:48 America/Caracas] Model::loadModel -> Model loginModel cargada
-[26-Apr-2021 16:48:48 America/Caracas] app::functionUrl -> No hay funcion definida
-[26-Apr-2021 16:48:49 America/Caracas] Home::construct -> dentro de home controller
-[26-Apr-2021 16:48:49 America/Caracas] View::render -> vistahomecargada
-[26-Apr-2021 16:48:49 America/Caracas] Model::loadModel -> Model no existe
-[26-Apr-2021 16:48:49 America/Caracas] app::functionUrl -> No hay funcion definida
-[26-Apr-2021 16:48:49 America/Caracas] Login::construct -> dentro de Login controller
-[26-Apr-2021 16:48:49 America/Caracas] View::render -> vistalogincargada
-[26-Apr-2021 16:48:49 America/Caracas] Model::loadModel -> Model loginModel cargada
-[26-Apr-2021 16:48:49 America/Caracas] app::functionUrl -> No hay funcion definida
-[26-Apr-2021 16:48:51 America/Caracas] Login::construct -> dentro de Login controller
-[26-Apr-2021 16:48:51 America/Caracas] View::render -> vistalogincargada
-[26-Apr-2021 16:48:51 America/Caracas] Model::loadModel -> Model loginModel cargada
-[26-Apr-2021 16:48:51 America/Caracas] LoginModel::contruct -> modelo login cargado
-[26-Apr-2021 16:48:51 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 34
-[26-Apr-2021 16:48:51 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 15
-[26-Apr-2021 16:48:51 America/Caracas] View::render -> vistadashboardcargada
-[26-Apr-2021 16:48:51 America/Caracas] Model::loadModel -> Model no existe
-[26-Apr-2021 16:48:51 America/Caracas] app::functionUrl -> No hay funcion definida
-[26-Apr-2021 16:48:54 America/Caracas] Login::construct -> dentro de Login controller
-[26-Apr-2021 16:48:54 America/Caracas] View::render -> vistalogincargada
-[26-Apr-2021 16:48:54 America/Caracas] Model::loadModel -> Model loginModel cargada
-[26-Apr-2021 16:48:54 America/Caracas] app::functionUrl -> No hay funcion definida
-[26-Apr-2021 16:48:54 America/Caracas] View::render -> vistadashboardcargada
-[26-Apr-2021 16:48:54 America/Caracas] Model::loadModel -> Model no existe
-[26-Apr-2021 16:48:54 America/Caracas] app::functionUrl -> No hay funcion definida
-[26-Apr-2021 16:48:54 America/Caracas] register::construct -> dentro de registro controller
-[26-Apr-2021 16:48:54 America/Caracas] View::render -> vistaregistercargada
-[26-Apr-2021 16:48:54 America/Caracas] Model::loadModel -> Model registerModel cargada
-[26-Apr-2021 16:48:54 America/Caracas] app::functionUrl -> No hay funcion definida
-[26-Apr-2021 16:48:54 America/Caracas] View::render -> vistadashboardcargada
-[26-Apr-2021 16:48:54 America/Caracas] Model::loadModel -> Model no existe
-[26-Apr-2021 16:48:54 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:13:11 America/Caracas] View::render -> vistadashboardcargada
+[27-Apr-2021 19:13:11 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:13:11 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:13:11 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:13:11 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:13:13 America/Caracas] View::render -> vistadashboardcargada
+[27-Apr-2021 19:13:13 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:13:13 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:13:13 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:13:13 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:13:16 America/Caracas] Login::construct -> dentro de Login controller
+[27-Apr-2021 19:13:16 America/Caracas] View::render -> vistalogincargada
+[27-Apr-2021 19:13:16 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:13:16 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:13:16 America/Caracas] Model::loadModel -> Model loginModel cargada
+[27-Apr-2021 19:13:16 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:13:16 America/Caracas] View::render -> vistadashboardcargada
+[27-Apr-2021 19:13:16 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:13:16 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:13:16 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:13:16 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:15:00 America/Caracas] View::render -> vistadashboardcargada
+[27-Apr-2021 19:15:00 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:15:00 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:15:00 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:15:00 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:15:01 America/Caracas] Home::construct -> dentro de home controller
+[27-Apr-2021 19:15:01 America/Caracas] View::render -> vistahomecargada
+[27-Apr-2021 19:15:01 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:15:01 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:15:01 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:15:01 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:15:05 America/Caracas] Login::construct -> dentro de Login controller
+[27-Apr-2021 19:15:05 America/Caracas] View::render -> vistalogincargada
+[27-Apr-2021 19:15:05 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:15:05 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:15:05 America/Caracas] Model::loadModel -> Model loginModel cargada
+[27-Apr-2021 19:15:05 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:15:05 America/Caracas] View::render -> vistadashboardcargada
+[27-Apr-2021 19:15:05 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:15:05 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:15:05 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:15:05 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:15:06 America/Caracas] Login::construct -> dentro de Login controller
+[27-Apr-2021 19:15:06 America/Caracas] View::render -> vistalogincargada
+[27-Apr-2021 19:15:06 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:15:06 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:15:06 America/Caracas] Model::loadModel -> Model loginModel cargada
+[27-Apr-2021 19:15:06 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:15:06 America/Caracas] View::render -> vistadashboardcargada
+[27-Apr-2021 19:15:06 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:15:06 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:15:06 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:15:06 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:20:01 America/Caracas] View::render -> vistadashboardcargada
+[27-Apr-2021 19:20:01 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:20:01 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:20:01 America/Caracas] PHP Warning:  Undefined array key "id" in D:\xampp\htdocs\twitter\views\dashboard\index.php on line 16
+[27-Apr-2021 19:20:01 America/Caracas] PHP Warning:  Undefined array key "post" in D:\xampp\htdocs\twitter\views\dashboard\index.php on line 17
+[27-Apr-2021 19:20:01 America/Caracas] PHP Warning:  Undefined array key "id_user" in D:\xampp\htdocs\twitter\views\dashboard\index.php on line 18
+[27-Apr-2021 19:20:01 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:20:01 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:20:11 America/Caracas] View::render -> vistadashboardcargada
+[27-Apr-2021 19:20:11 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:20:11 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:20:11 America/Caracas] PHP Warning:  Undefined array key "id" in D:\xampp\htdocs\twitter\views\dashboard\index.php on line 16
+[27-Apr-2021 19:20:11 America/Caracas] PHP Warning:  Undefined array key "post" in D:\xampp\htdocs\twitter\views\dashboard\index.php on line 17
+[27-Apr-2021 19:20:11 America/Caracas] PHP Warning:  Undefined array key "id_user" in D:\xampp\htdocs\twitter\views\dashboard\index.php on line 18
+[27-Apr-2021 19:20:11 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:20:11 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:20:26 America/Caracas] View::render -> vistadashboardcargada
+[27-Apr-2021 19:20:26 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:20:26 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:20:26 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:20:26 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:20:35 America/Caracas] View::render -> vistadashboardcargada
+[27-Apr-2021 19:20:35 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:20:35 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:20:35 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:20:35 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:20:46 America/Caracas] View::render -> vistadashboardcargada
+[27-Apr-2021 19:20:46 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:20:46 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:20:46 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:20:46 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:21:19 America/Caracas] View::render -> vistadashboardcargada
+[27-Apr-2021 19:21:19 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:21:19 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:21:19 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:21:19 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:21:24 America/Caracas] Login::construct -> dentro de Login controller
+[27-Apr-2021 19:21:24 America/Caracas] View::render -> vistalogincargada
+[27-Apr-2021 19:21:24 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:21:24 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:21:24 America/Caracas] Model::loadModel -> Model loginModel cargada
+[27-Apr-2021 19:21:24 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 15
+[27-Apr-2021 19:21:24 America/Caracas] Home::construct -> dentro de home controller
+[27-Apr-2021 19:21:24 America/Caracas] View::render -> vistahomecargada
+[27-Apr-2021 19:21:24 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:21:24 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:21:24 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:21:24 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:21:27 America/Caracas] Login::construct -> dentro de Login controller
+[27-Apr-2021 19:21:27 America/Caracas] View::render -> vistalogincargada
+[27-Apr-2021 19:21:27 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:21:27 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:21:27 America/Caracas] Model::loadModel -> Model loginModel cargada
+[27-Apr-2021 19:21:27 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:21:29 America/Caracas] Login::construct -> dentro de Login controller
+[27-Apr-2021 19:21:29 America/Caracas] View::render -> vistalogincargada
+[27-Apr-2021 19:21:29 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:21:29 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:21:29 America/Caracas] Model::loadModel -> Model loginModel cargada
+[27-Apr-2021 19:21:29 America/Caracas] LoginModel::contruct -> modelo login cargado
+[27-Apr-2021 19:21:29 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:21:29 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 15
+[27-Apr-2021 19:21:29 America/Caracas] id:52
+[27-Apr-2021 19:21:29 America/Caracas] View::render -> vistadashboardcargada
+[27-Apr-2021 19:21:29 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:21:29 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:21:29 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:21:29 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:21:36 America/Caracas] View::render -> vistadashboardcargada
+[27-Apr-2021 19:21:36 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:21:36 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:21:36 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:21:36 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:21:36 America/Caracas] View::render -> vistadashboardcargada
+[27-Apr-2021 19:21:36 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:21:36 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:21:36 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:21:36 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:22:22 America/Caracas] View::render -> vistadashboardcargada
+[27-Apr-2021 19:22:22 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:22:22 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:22:22 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:22:22 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:22:31 America/Caracas] View::render -> vistadashboardcargada
+[27-Apr-2021 19:22:31 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:22:31 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:22:31 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:22:31 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:22:31 America/Caracas] View::render -> vistadashboardcargada
+[27-Apr-2021 19:22:31 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:22:31 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:22:31 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:22:31 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:22:35 America/Caracas] Home::construct -> dentro de home controller
+[27-Apr-2021 19:22:35 America/Caracas] View::render -> vistahomecargada
+[27-Apr-2021 19:22:35 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:22:35 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:22:35 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:22:35 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:22:35 America/Caracas] View::render -> vistadashboardcargada
+[27-Apr-2021 19:22:35 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:22:35 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:22:35 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:22:35 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:22:39 America/Caracas] Login::construct -> dentro de Login controller
+[27-Apr-2021 19:22:39 America/Caracas] View::render -> vistalogincargada
+[27-Apr-2021 19:22:39 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:22:39 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:22:39 America/Caracas] Model::loadModel -> Model loginModel cargada
+[27-Apr-2021 19:22:39 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:22:39 America/Caracas] Login::construct -> dentro de Login controller
+[27-Apr-2021 19:22:39 America/Caracas] View::render -> vistalogincargada
+[27-Apr-2021 19:22:39 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:22:39 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:22:39 America/Caracas] Model::loadModel -> Model loginModel cargada
+[27-Apr-2021 19:22:39 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:22:39 America/Caracas] View::render -> vistadashboardcargada
+[27-Apr-2021 19:22:39 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:22:39 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:22:39 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:22:39 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:22:58 America/Caracas] Home::construct -> dentro de home controller
+[27-Apr-2021 19:22:58 America/Caracas] View::render -> vistahomecargada
+[27-Apr-2021 19:22:58 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:22:58 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:22:58 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:22:58 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:22:59 America/Caracas] View::render -> vistadashboardcargada
+[27-Apr-2021 19:22:59 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:22:59 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:22:59 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:22:59 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:23:01 America/Caracas] Login::construct -> dentro de Login controller
+[27-Apr-2021 19:23:01 America/Caracas] View::render -> vistalogincargada
+[27-Apr-2021 19:23:01 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:23:01 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:23:01 America/Caracas] Model::loadModel -> Model loginModel cargada
+[27-Apr-2021 19:23:01 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 15
+[27-Apr-2021 19:23:01 America/Caracas] Home::construct -> dentro de home controller
+[27-Apr-2021 19:23:01 America/Caracas] View::render -> vistahomecargada
+[27-Apr-2021 19:23:01 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:23:01 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:23:01 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:23:01 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:23:03 America/Caracas] View::render -> vistadashboardcargada
+[27-Apr-2021 19:23:03 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:23:03 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:23:03 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:23:03 America/Caracas] app::functionUrl -> No hay funcion definida
+[27-Apr-2021 19:23:03 America/Caracas] Home::construct -> dentro de home controller
+[27-Apr-2021 19:23:03 America/Caracas] View::render -> vistahomecargada
+[27-Apr-2021 19:23:03 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:23:03 America/Caracas] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\twitter\class\sessions.php on line 35
+[27-Apr-2021 19:23:03 America/Caracas] Model::loadModel -> Model no existe
+[27-Apr-2021 19:23:03 America/Caracas] app::functionUrl -> No hay funcion definida

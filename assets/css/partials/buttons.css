@@ -1,0 +1,12 @@
+.btn {
+    width: max-content;
+    padding: 1em;
+    background-color: var(--gray-dark);
+    color: var(--blue);
+    border: 0;
+}
+
+.btn:hover {
+    background-color: var(--gray-light);
+    cursor: pointer;
+}

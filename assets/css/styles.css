@@ -1,0 +1,9 @@
+@import url('./config/global.css');
+
+@import url('./config/variables.css');
+
+@import url('./partials/buttons.css');
+@import url('./partials/menu.css');
+@import url('./partials/form.css');
+@import url('./partials/posts.css');
+@import url('./partials/errors.css');

@@ -43,6 +43,9 @@ class Permissions extends Session
 
     public function redirectURLWithpermissions()
     {
+        if (strpos($this->url[1], '?')) {
+            $this->url[1] = substr($this->url[1], 0, strpos($this->url[1], '?'));
+        }
 
         if (array_search($this->url[1], array_column($this->pagesPermissions[0], 'name')) === false) {
             header('location:' . constant('URL') . $this->defaultPages[0][0]['name']);

@@ -24,6 +24,12 @@ class Controller
 
     }
 
+    public function setDataView($data)
+    {
+        $this->view->setData($data);
+
+    }
+
     public function loadModel($name)
     {
         $this->model = new Model();

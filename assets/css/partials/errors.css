@@ -1,0 +1,14 @@
+.error,
+.success {
+    width: 100%;
+    padding: 1.5em;
+    color: white;
+}
+
+.error {
+    background-color: var(--red);
+}
+
+.success {
+    background-color: var(--green);
+}

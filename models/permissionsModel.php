@@ -12,40 +12,17 @@ class PermissionsModel extends Model
 
     public function getAllPermissionsForRole($idRole)
     {
-        try {
-            $pagePermissionsPage = [];
+        $pagePermissionsPage = $this->innerJoin('id_page,name', 'permissions_page_type_users', 'pages', 'pages.id=id_page AND permissions_page_type_users.id_user= :id', ['id' => $idRole]);
+        return $pagePermissionsPage;
 
-            $res = $this->prepare('SELECT id_page,name FROM permissions_page_type_users INNER JOIN pages WHERE pages.id=id_page AND permissions_page_type_users.id_user= :id');
-            $res->execute(['id' => $idRole]);
-
-            while ($p = $res->fetchAll(PDO::FETCH_ASSOC)) {
-                array_push($pagePermissionsPage, $p);
-            }
-
-            return $pagePermissionsPage;
-
-        } catch (PDOException $e) {
-            error_log('PermissionsModel::getAllpermissionsforrole -> error: ' . $e);
-        }
     }
 
     public function getAllDefaultForRole($idRole)
     {
-        try {
-            $pagePermissionsPage = [];
+        $pageDefault = $this->innerJoin('id_page,name', 'default_page_type_user', 'pages', 'pages.id=id_page AND default_page_type_user.id_type_user= :id', ['id' => $idRole]);
 
-            $res = $this->prepare('SELECT id_page,name FROM default_page_type_user INNER JOIN pages WHERE pages.id=id_page AND default_page_type_user.id_type_user= :id');
-            $res->execute(['id' => $idRole]);
+        return $pageDefault;
 
-            while ($p = $res->fetchAll(PDO::FETCH_ASSOC)) {
-                array_push($pagePermissionsPage, $p);
-            }
-
-            return $pagePermissionsPage;
-
-        } catch (PDOException $e) {
-            error_log('PermissionsModel::getdefaultpermissionsforrole -> error: ' . $e);
-        }
     }
 
 }

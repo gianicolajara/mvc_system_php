@@ -1,0 +1,21 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+
+    border: 1px solid var(--gray-light);
+    padding: 1.5em;
+    border-radius: .5em;
+    width: 100%;
+    resize: none;
+}

@@ -1,8 +1,6 @@
 <main>
-    <h1><?php echo $this->getTitle(); ?></h1>
-    <hr>
     <?php $this->showMessage()?>
-    <form action="<?php echo constant('URL'); ?>login/authenticate" method="POST">
+    <form action="<?php echo constant('URL'); ?>login/authenticate" method="POST" class="form">
         <div class="form-group">
             <label for="user">Usuario:</label>
             <input type="text" name="user" id="user">
@@ -11,6 +9,6 @@
             <label for="pass">Contraseña:</label>
             <input type="password" name="pass" id="pass">
         </div>
-        <input type="submit" value="Ingresar">
+        <input type="submit" value="Ingresar" class="btn">
     </form>
 </main>

@@ -26,6 +26,7 @@ class Login extends Controller
                 $this->redirect('dashboard', []);
             } else {
                 $res = $login->login($res[0], $res[1]);
+                print_r($res);
                 $user->from($res);
                 if ($res) {
                     $session->sessionStart();

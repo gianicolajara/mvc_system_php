@@ -1,21 +1,30 @@
 <?php
 
+require_once 'class/sessions.php';
+
 class View extends Controller
 {
 
     private $title = 'home';
     private $message;
+    private $data;
 
     public function __construct()
     {
 
     }
 
+    public function getSession()
+    {
+        $session = new Session();
+        $res = $session->sessionExists();
+        return $res;
+    }
+
     //Imprimimos la vista
     public function render($name)
     {
         $urlRender = 'views/' . $name . "/index.php";
-        echo $urlRender;
         if (file_exists($urlRender)) {
             error_log('View::render -> vista' . $name . 'cargada');
             $this->setTitle($name);
@@ -36,15 +45,35 @@ class View extends Controller
             if ($res) {
                 $this->message = $errorManagement->obtainError($key);
             }
+            return 'error';
+        } else if ((isset($_GET['success']) && !empty($_GET['success']))) {
+            $key = $_GET['success'];
+            $errorManagement = new ErrorsManagement();
+            $res = $errorManagement->keyExist($key);
+            if ($res) {
+                $this->message = $errorManagement->obtainError($key);
+            }
+            return 'success';
+
         }
     }
 
     public function showMessage()
     {
-        $this->getMessageError();
+        $type = $this->getMessageError();
         if (!empty($this->message)) {
-            echo '<p class="error">' . $this->message . '</p>';
+            echo '<p class="' . $type . '">' . $this->message . '</p>';
         }
+    }
+
+    public function getData()
+    {
+        return $this->data;
+    }
+
+    public function setData($data)
+    {
+        $this->data = $data;
     }
 
     public function getTitle()

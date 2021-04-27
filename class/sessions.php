@@ -26,6 +26,7 @@ class Session
         $_SESSION['name'] = $user->getUser();
         $_SESSION['id'] = $user->getId();
         $_SESSION['role'] = $user->getIdTypeUser();
+        error_log('id:' . $user->getId());
     }
 
     public function sessionExists()

@@ -17,6 +17,7 @@ class UserModel extends DB
     public function from($arrayData)
     {
         if (!empty($arrayData)) {
+            $this->id = $arrayData['id'];
             $this->user = $arrayData['user'];
             $this->pass = $arrayData['pass'];
             $this->id_type_user = $arrayData['id_type_user'];

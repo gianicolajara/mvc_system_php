@@ -11,11 +11,11 @@ class DB
 
     public function __construct()
     {
-        $this->host = 'localhost';
-        $this->name = 'root';
-        $this->pass = '';
-        $this->charset = 'utf8';
-        $this->db = 'twitter';
+        $this->host = constant('HOST');
+        $this->name = constant('NAME');
+        $this->pass = constant('PASS');
+        $this->charset = constant('CHARSET');
+        $this->db = constant('DB');
     }
 
     public function connection()

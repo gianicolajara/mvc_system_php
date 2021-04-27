@@ -87,7 +87,6 @@ class Model extends DB
 
     public function insert($table, $vars, $values, $data)
     {
-        error_log('INSERT INTO ' . $table . '(' . $vars . ') VALUES(' . $values . ')');
         try {
             $res = $this->prepare('INSERT INTO ' . $table . '(' . $vars . ') VALUES(' . $values . ')');
             $res->execute($data);
@@ -98,6 +97,22 @@ class Model extends DB
             }
         } catch (PDOException $e) {
             error_log('MODEL::INSERT -> Error database ' . $e);
+            return false;
+        }
+    }
+
+    public function innerJoin($select, $table, $table2, $on, $data)
+    {
+        try {
+            $arrayData = [];
+            $res = $this->prepare('SELECT ' . $select . ' FROM ' . $table . ' INNER JOIN ' . $table2 . ' ON ' . $on);
+            $res->execute($data);
+            while ($p = $res->fetchAll(PDO::FETCH_ASSOC)) {
+                array_push($arrayData, $p);
+            }
+            return $arrayData;
+        } catch (PDOException $e) {
+            error_log('MODEL::innerjoin -> Error database ' . $e);
             return false;
         }
     }

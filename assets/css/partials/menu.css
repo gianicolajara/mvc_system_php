@@ -1,0 +1,33 @@
+.header {
+    width: 100%;
+    display: flex;
+    background-color: var(--gray-dark);
+}
+
+.menu {
+    width: 100%;
+    position: sticky;
+}
+
+.menu .menu__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.menu .menu__item {
+    padding: 1.5em;
+}
+
+.menu .menu__link {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.disconnected {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
